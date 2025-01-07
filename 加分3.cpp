@@ -584,7 +584,7 @@ int main()
             cout << get_styled_text("!!! Invalid action !!!", "R");
     }
 
-    return 0;
+
 }
 
 
