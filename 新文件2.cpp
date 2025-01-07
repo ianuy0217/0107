@@ -311,12 +311,7 @@ bool check_win()
 	}
 	/*判斷直排根橫排是不是都是對的，每個都執行四次*/ 
 	
-	if(check_block(0,0)==2)k++;
-	if(check_block(2,0)==2)k++;
-	if(check_block(0,2)==2)k++;
-	if(check_block(2,2)==2)k++;
-	/*每個方塊的第一數字去檢測是不是對的*/
-	 
+	
 	if(k==12)return true;/*如果每個條件都有符合的話k值就會是12， return true*/ 
     return false;
 
