@@ -22,17 +22,7 @@ int check_horizontal(int i,int j)
     
     int k=0,t=0,r=0;/*k琌耞岿t琌耞Τ碭ぃ单0计r琌耞癸*/
     
-    for(int n=0;n<4;n++){
-    	for(int m=0;m<4;m++){
-    		if(board[i][n]==board[i][m]&&board[i][n]!=0){
-    			k++;
-			}
-			else if(board[i][n]!=board[i][m]&&board[i][n]!=0){
-				r++;/*狦board[i][n]蛤ㄤ计ぃ妓碞羆耞计–计常璶蛤ㄤぃ妓r琌12–计蛤ぃ妓*/
-
-			}
-		}
-	}
+    
 	for(int m=0;m<4;m++){
     		if(board[i][m]!=0){
     			t++;/*耞Τ碭ぃ0计*/ 
