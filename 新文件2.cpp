@@ -265,10 +265,7 @@ bool is_invalid(int i, int j)
    
     /* TODO: Check if board[i][j] is in a line that has conflict numbers. */
     /*分別執行判斷直排、橫排、方塊裡面的狀況*/ 
-    check_horizontal(i,j);
-    check_block(i,j);
-    check_vertical(i,j);
-    
+   
     if(check_horizontal(i,j)==1){
     	return true; /*如果 check_horizontal(i,j) return 1，代表是錯的答案*/ 
 	}
