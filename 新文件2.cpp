@@ -318,11 +318,7 @@ bool check_win()
 }
 
 
-bool is_moving_action(char c)
-{
-    return (c == 'W' || c == 'w' || c == 'S' || c == 's' ||
-            c == 'A' || c == 'a' || c == 'D' || c == 'd');
-}
+
 
 bool is_filling_action(char c)
 {
