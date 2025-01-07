@@ -265,10 +265,7 @@ bool is_invalid(int i, int j)
    
     /* TODO: Check if board[i][j] is in a line that has conflict numbers. */
     /*分別執行判斷直排、橫排、方塊裡面的狀況*/ 
-    check_horizontal(i,j);
-    check_block(i,j);
-    check_vertical(i,j);
-    
+   
     if(check_horizontal(i,j)==1){
     	return true; /*如果 check_horizontal(i,j) return 1，代表是錯的答案*/ 
 	}
@@ -314,12 +311,7 @@ bool check_win()
 	}
 	/*判斷直排根橫排是不是都是對的，每個都執行四次*/ 
 	
-	if(check_block(0,0)==2)k++;
-	if(check_block(2,0)==2)k++;
-	if(check_block(0,2)==2)k++;
-	if(check_block(2,2)==2)k++;
-	/*每個方塊的第一數字去檢測是不是對的*/
-	 
+	
 	if(k==12)return true;/*如果每個條件都有符合的話k值就會是12， return true*/ 
     return false;
 
